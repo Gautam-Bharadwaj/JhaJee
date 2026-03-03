@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Old+Standard+TT:wght@400;700&family=Lora:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+    --paper-color: #1e1b18;
+    /* Dark mocha base */
+    --ink-color: #e8e4d1;
+    /* Aged cream text for high contrast */
+    --sepia-filter: brightness(0.7) contrast(1.2);
+    --border-color: rgba(232, 228, 209, 0.4);
+    /* Light border for dark theme */
+    --paper-tint: rgba(30, 27, 24, 0.6);
+    /* Darker overlay */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    color: var(--ink-color);
+    background-color: var(--paper-color);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url('assets/asha_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: var(--sepia-filter);
+}
+
+#background-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--paper-tint);
+    pointer-events: none;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "jhajee",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">   <h1>Gautam Jha | Personal Portfolio</h1>   <p>     A modern, sleek, and interactive personal portfolio website built to showcase my projects, skills, and professional journey.   </p>",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
